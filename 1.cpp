@@ -345,6 +345,7 @@ cout <<  (2.*M_PI*r/v) * 1. << '*' << t << endl ;
     ticker *= 2 ;       /// увеличиваем периодичность репортов в 2 раза до 2000 секунд
     message ( "GEO flight begin\n") ;
 
+    int flag = 0 ;
     for( double timer = t + Day ; t < timer ; i++ ) {///по таймеру на время одного витка
         r = sqrt ( x*x + y*y );
         phi = atan2 ( y, x );
@@ -357,6 +358,15 @@ cout <<  (2.*M_PI*r/v) * 1. << '*' << t << endl ;
         v = sqrt ( vx*vx + vy*vy ) ;
         x += vx * DT ;
         y += vy * DT ;
+          
+        if ( y >= 0. && flag == 0 ) {
+            char mes[100] ;
+            sprintf ( mes , "Zero point: x=%.0lf; v=%.0lf\n" , x, v ) ;
+            message ( mes ) ;
+            report ( ) ;
+            flag = 1 ;
+        }
+
         t += DT ;
         if ( i % ticker == 0 ) report ( ) ;
     }
