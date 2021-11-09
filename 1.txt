@@ -1,0 +1,19 @@
+Flight time:	Message:
+        0.00:	START. Stage 1 engine ON
+      153.33:	Stage 1 fuel tank empty
+      153.33:	Stage 1 fuel tank dropped off
+      153.33:	Speed vector turn on ALHPA 60.136 deg
+      153.33:	Stage 2 engine ON
+      285.83:	Stage 2 engine fuel tank empty
+      285.83:	Stage 2 fuel tank dropped off
+      285.83:	Stage 3 engine ON first time on 35.312 sec
+      321.15:	Stage 3 engine OFF. Fuel in tank 129.350 kg
+      321.15:	Free flight begin
+    19723.75:	Ellyspe apogee, xi = 90 deg
+    19723.75:	Stage 3 engine ON second time
+    19726.11:	Stage 3 engine OFF. Fuel in tank 11.250 kg
+    19726.11:	GEO flight begin
+    59263.13:	Zero point: x=42174033; v=3074
+   105890.20:	GEO flight completed
+   105890.20:	GOAL orbit:	Ro= 42165188 m	Vo=3074.73
+   105890.20:	Reached orbit:	r = 42169507 m	 v=3074.66
